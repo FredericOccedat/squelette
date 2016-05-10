@@ -1,7 +1,9 @@
 (ns squelette.core
+  (:require [com.stuartsierra.component :as component]
+            [squelette.system :refer [new-system]])
   (:gen-class))
 
 (defn -main
-  "I don't do a whole lot ... yet."
+  "Starting point of the squelette app"
   [& args]
-  (println "Hello, World!"))
+  (component/start (new-system {:port 3000})))

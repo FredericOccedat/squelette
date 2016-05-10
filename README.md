@@ -1,32 +1,25 @@
 # squelette
 
-FIXME: description
-
-## Installation
-
-Download from http://example.com/FIXME.
+My typical starting point for a webapp:
+- reloaded repl
+- components
+- httpkit as a webserver
+- compojure for routing
 
 ## Usage
 
-FIXME: explanation
+It's a just a dumb webserver saying Hello. It will by default run on port 3000.
 
-    $ java -jar squelette-0.1.0-standalone.jar [args]
+    $ java -jar target/uberjar/squelette.jar
 
-## Options
+or
 
-FIXME: listing of options this app accepts.
+    $ lein run
 
-## Examples
+or
 
-...
-
-### Bugs
-
-...
-
-### Any Other Sections
-### That You Think
-### Might be Useful
+    In a repl, from the user namespace, first (dev) to load the dev environment, then (reset) to start the system.
+    Use (reset) each time you want to reload the system. Use (stop) if you want to stop the system.
 
 ## License
 
