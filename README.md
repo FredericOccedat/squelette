@@ -8,9 +8,14 @@ My typical starting point for a webapp:
 
 ## Usage
 
-It's a just a dumb webserver saying Hello. It will by default run on port 3000.
+To create a new project from the skeleton, use the following sscript:
 
-    $ java -jar target/uberjar/squelette.jar
+./create_project.sh <your_project_name>
+
+It will create a new project based on the structure of squelette. It will only be a dumb webserver saying Hello. It will by default run on port 3000.
+
+    $ lein uberjar
+    $ java -jar target/uberjar/<your_project_name>.jar
 
 or
 
